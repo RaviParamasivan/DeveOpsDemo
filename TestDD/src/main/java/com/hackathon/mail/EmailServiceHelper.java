@@ -11,8 +11,8 @@ import com.hackathon.dataobject.UserComments;
 public class EmailServiceHelper {
 
     private static final String SMTP_HOST_NAME = "smtp.sendgrid.net";
-    private static final String SMTP_AUTH_USER = "7bqGkrFzDt";
-    private static final String SMTP_AUTH_PWD  = "GACREvc4E1EM0227";
+    private static final String SMTP_AUTH_USER = "tXIXNKslLC";
+    private static final String SMTP_AUTH_PWD  = "YDBa9nvRqYV68174";
    // private static final String SMTP_TO_USER = "gdmmadhan@yahoo.in";
     		
     		
