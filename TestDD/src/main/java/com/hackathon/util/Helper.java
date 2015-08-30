@@ -119,14 +119,8 @@ public class Helper {
 		DataSource ds = new DataSource();
 		ResultSet resultSet;
 		try {
-			resultSet = ds.getSentiments();
-			while (resultSet.next()) {
-				sentimentsSocre = new SentimentsSocre();
-				sentimentsSocre.setScore(Double.parseDouble(resultSet.getString("score")));
-				sentimentsSocre.setWeight(Double.parseDouble(resultSet.getString("weightage")));
-				sentiments.put(resultSet.getString("text"),sentimentsSocre);
-				
-			}	
+			sentiments = ds.getSentiments();
+	
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
