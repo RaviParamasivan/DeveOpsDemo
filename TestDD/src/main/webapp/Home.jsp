@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Home</title>
 <script  src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<link rel="Stylesheet" href="css/home.css" type="text/css" />
+<link rel="Stylesheet" href="home.css" type="text/css" />
 <script type="text/javascript">
 $(document).ready(function(){ 
 
@@ -104,7 +104,7 @@ function updateFeedback(){
 				<table cellpadding="0" cellspacing="0" width="100%">
 					<tr>
 						<td><a href="index.html"><span
-								style="color: #FE980F; font-size: 20px; font-weight: bold">ONLINE
+								style="color: #FE980F; font-size: 20px; font-weight: bold">JIGARTHANDA ONLINE
 									<span style="color: #333; font-size: 20px; font-weight: bold">E
 										CART</span>
 							</span></a></td>
@@ -161,9 +161,11 @@ function updateFeedback(){
 									<div class="single-products">
 										<div class="productinfo text-center">
 											<div
-												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"></div>
-											<h2>$56</h2>
-											<p>ASUS ZENFONE</p>
+												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd">
+												<img src="http://ec1.ostkcdn.com/images/products/9459527/P16643136.jpg" alt="Beats Studio Over-Ear Headphones" border="0" style="height: auto;width: auto;max-width: 211px;max-height: 300px;"></div>									
+    
+											<h2>$156</h2>
+											<p>Beats Studio Over-Ear Headphones</p>
 											<a href="#" class="btn btn-default add-to-cart"><i
 												class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
@@ -183,9 +185,9 @@ function updateFeedback(){
 									<div class="single-products">
 										<div class="productinfo text-center">
 											<div
-												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"></div>
-											<h2>$56</h2>
-											<p>ASUS ZENFONE</p>
+												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"><img src="http://ak1.ostkcdn.com/images/products/8962790/Apple-iPhone-5-EarBuds-Genuine-OEM-P16172822.jpg" alt="Beats Studio Over-Ear Headphones" border="0" style="height: auto;width: auto;max-width: 211px;max-height: 300px;"></div>
+											<h2>$256</h2>
+											<p>Beats Studio Over-Ear Headphones</p>
 											<a href="#" class="btn btn-default add-to-cart"><i
 												class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
@@ -205,77 +207,9 @@ function updateFeedback(){
 									<div class="single-products">
 										<div class="productinfo text-center">
 											<div
-												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"></div>
+												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"><img src="http://ak1.ostkcdn.com/images/products/10056285/P17201009.jpg" alt="Behind the Neck Bluetooth Magnetic Earbud Headset" border="0" style="height: auto;width: auto;max-width: 211px;max-height: 300px;"></div>
 											<h2>$56</h2>
-											<p>ASUS ZENFONE</p>
-											<a href="#" class="btn btn-default add-to-cart"><i
-												class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-									<div class="choose">
-										<ul class="nav nav-pills nav-justified">
-											<li><a href="#"><i class="fa fa-plus-square"></i>Add
-													to wishlist</a></li>
-											<li><a href="#"><i class="fa fa-plus-square"></i>Add
-													to compare</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</td>
-						<td valign="top">
-							<div class="col-sm-4">
-								<div class="product-image-wrapper">
-									<div class="single-products">
-										<div class="productinfo text-center">
-											<div
-												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"></div>
-											<h2>$56</h2>
-											<p>ASUS ZENFONE</p>
-											<a href="#" class="btn btn-default add-to-cart"><i
-												class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-									<div class="choose">
-										<ul class="nav nav-pills nav-justified">
-											<li><a href="#"><i class="fa fa-plus-square"></i>Add
-													to wishlist</a></li>
-											<li><a href="#"><i class="fa fa-plus-square"></i>Add
-													to compare</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="product-image-wrapper">
-									<div class="single-products">
-										<div class="productinfo text-center">
-											<div
-												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"></div>
-											<h2>$56</h2>
-											<p>ASUS ZENFONE</p>
-											<a href="#" class="btn btn-default add-to-cart"><i
-												class="fa fa-shopping-cart"></i>Add to cart</a>
-										</div>
-									</div>
-									<div class="choose">
-										<ul class="nav nav-pills nav-justified">
-											<li><a href="#"><i class="fa fa-plus-square"></i>Add
-													to wishlist</a></li>
-											<li><a href="#"><i class="fa fa-plus-square"></i>Add
-													to compare</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="product-image-wrapper">
-									<div class="single-products">
-										<div class="productinfo text-center">
-											<div
-												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"></div>
-											<h2>$56</h2>
-											<p>ASUS ZENFONE</p>
+											<p>Behind the Neck Bluetooth Magnetic </p>
 											<a href="#" class="btn btn-default add-to-cart"><i
 												class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
@@ -297,9 +231,9 @@ function updateFeedback(){
 									<div class="single-products">
 										<div class="productinfo text-center">
 											<div
-												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"></div>
-											<h2>$56</h2>
-											<p>ASUS ZENFONE</p>
+												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"><img src="http://ak1.ostkcdn.com/images/products/9670269/P16850958.jpg" alt="Beats by Dre Studio Wireless Over-Ear Headphones"  border="0" style="height: auto;width: auto;max-width: 211px;max-height: 300px;"></div>
+											<h2>$46</h2>
+											<p>Beats by Dre Studio Wireless Over-Ear</p>
 											<a href="#" class="btn btn-default add-to-cart"><i
 												class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
@@ -319,9 +253,9 @@ function updateFeedback(){
 									<div class="single-products">
 										<div class="productinfo text-center">
 											<div
-												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"></div>
-											<h2>$56</h2>
-											<p>ASUS ZENFONE</p>
+												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"><img src="http://ak1.ostkcdn.com/images/products/4413307/MEElectronics-M6-Stylish-Sound-Isolating-Sports-Earphones-P12373658ab.jpg" alt="MEElectronics M6 Stylish Sound Isolating Sports Earphones" border="0" style="height: auto;width: auto;max-width: 211px;max-height: 300px;"></div>
+											<h2>256</h2>
+											<p>MEElectronics M6 Stylish Sound Isolating Sports Earphones</p>
 											<a href="#" class="btn btn-default add-to-cart"><i
 												class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
@@ -341,9 +275,9 @@ function updateFeedback(){
 									<div class="single-products">
 										<div class="productinfo text-center">
 											<div
-												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"></div>
-											<h2>$56</h2>
-											<p>ASUS ZENFONE</p>
+												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"><img src="http://ak1.ostkcdn.com/images/products/9775283/P16945289.jpg" alt="Insten Universal Car Steering Wheel Clip Mount Holder Cradle Stand for Apple iPhone 4/ 5/ 6, Samsung Galaxy S5/ S6, HTC One, GPS" border="0" style="height: auto;width: auto;max-width: 211px;max-height: 300px;"></div>
+											<h2>86</h2>
+											<p>Insten Universal Car Steering Wheel</p>
 											<a href="#" class="btn btn-default add-to-cart"><i
 												class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
@@ -365,9 +299,9 @@ function updateFeedback(){
 									<div class="single-products">
 										<div class="productinfo text-center">
 											<div
-												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"></div>
-											<h2>$56</h2>
-											<p>ASUS ZENFONE</p>
+												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"><img  src="http://ak1.ostkcdn.com/images/products/8687986/Samsung-Galaxy-Note-3-N9000-Battery-OEM-B800BU-A-P15941657.jpg" alt="Samsung Lithium Standard Battery OEM B800BU for Samsung Galaxy Note 3 N9000" border="0" style="height: auto;width: auto;max-width: 211px;max-height: 300px;"></div>
+											<h2>$20</h2>
+											<p>Samsung Lithium Standard Battery </p>
 											<a href="#" class="btn btn-default add-to-cart"><i
 												class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
@@ -387,9 +321,9 @@ function updateFeedback(){
 									<div class="single-products">
 										<div class="productinfo text-center">
 											<div
-												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"></div>
-											<h2>$56</h2>
-											<p>ASUS ZENFONE</p>
+												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"><img src="http://ak1.ostkcdn.com/images/products/9752250/P16924806.jpg" alt="Apple OEM White USB Travel Charger Adapter With 8-pin Lightning Cable MD818ZM/A For iPad/ iPhone 5/ 5C/ 5S/ 6/ 6+/ iPod Touch" border="0" style="height: auto;width: auto;max-width: 211px;max-height: 300px;"></div>
+											<h2>$19</h2>
+											<p>Apple OEM White USB Travel Charger </p>
 											<a href="#" class="btn btn-default add-to-cart"><i
 												class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
@@ -409,9 +343,77 @@ function updateFeedback(){
 									<div class="single-products">
 										<div class="productinfo text-center">
 											<div
-												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"></div>
-											<h2>$56</h2>
-											<p>ASUS ZENFONE</p>
+												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"><img src="http://ak1.ostkcdn.com/images/products/9999645/P17148874.jpg" alt="Beats by Dre Solo2 Wireless Over-ear Headphones"  border="0" style="height: auto;width: auto;max-width: 211px;max-height: 300px;"></div>
+											<h2>$65</h2>
+											<p>Beats by Dre Solo2 Wireless Over-ear</p>
+											<a href="#" class="btn btn-default add-to-cart"><i
+												class="fa fa-shopping-cart"></i>Add to cart</a>
+										</div>
+									</div>
+									<div class="choose">
+										<ul class="nav nav-pills nav-justified">
+											<li><a href="#"><i class="fa fa-plus-square"></i>Add
+													to wishlist</a></li>
+											<li><a href="#"><i class="fa fa-plus-square"></i>Add
+													to compare</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</td>
+						<td valign="top">
+							<div class="col-sm-4">
+								<div class="product-image-wrapper">
+									<div class="single-products">
+										<div class="productinfo text-center">
+											<div
+												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"><img src="http://ak1.ostkcdn.com/images/products/4512145/P12455916.jpg" alt="INSTEN Universal 3.5mm In-ear Stereo Headset with Mic for Apple iPhone 4S/ 5S/ 6"  border="0" style="height: auto;width: auto;max-width: 211px;max-height: 300px;"></div>
+											<h2>$48</h2>
+											<p>INSTEN Universal 3.5mm In-ear Stereo Headset with Mic for Apple iPhone 4S/ 5S/ 6</p>
+											<a href="#" class="btn btn-default add-to-cart"><i
+												class="fa fa-shopping-cart"></i>Add to cart</a>
+										</div>
+									</div>
+									<div class="choose">
+										<ul class="nav nav-pills nav-justified">
+											<li><a href="#"><i class="fa fa-plus-square"></i>Add
+													to wishlist</a></li>
+											<li><a href="#"><i class="fa fa-plus-square"></i>Add
+													to compare</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="product-image-wrapper">
+									<div class="single-products">
+										<div class="productinfo text-center">
+											<div
+												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"><img src="http://ak1.ostkcdn.com/images/products/etilize/images/250/1017320124.jpg" alt="Apple MB770G/B Earset" border="0" style="height: auto;width: auto;max-width: 211px;max-height: 300px;"></div>
+											<h2>$11</h2>
+											<p>Apple MB770G/B Earset</p>
+											<a href="#" class="btn btn-default add-to-cart"><i
+												class="fa fa-shopping-cart"></i>Add to cart</a>
+										</div>
+									</div>
+									<div class="choose">
+										<ul class="nav nav-pills nav-justified">
+											<li><a href="#"><i class="fa fa-plus-square"></i>Add
+													to wishlist</a></li>
+											<li><a href="#"><i class="fa fa-plus-square"></i>Add
+													to compare</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="product-image-wrapper">
+									<div class="single-products">
+										<div class="productinfo text-center">
+											<div
+												style="width: 214px; height: 218px; background: #ecedee; border: 1px solid #ddd"><img src="http://ak1.ostkcdn.com/images/products/P16785001a.jpg" alt="Beats by Dre Solo 2 On-ear Headphones" border="0" style="height: auto;width: auto;max-width: 211px;max-height: 300px;"></div>
+											<h2>$08</h2>
+											<p>Beats by Dre Solo 2 On-ear Headphones</p>
 											<a href="#" class="btn btn-default add-to-cart"><i
 												class="fa fa-shopping-cart"></i>Add to cart</a>
 										</div>
