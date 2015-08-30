@@ -10,10 +10,10 @@ public class Healper {
 		try{
 			if (isValidInput(userComments)) {
 				DataSource updateCustomeComments = new DataSource();
+				FeedbackAnalysis fb= new FeedbackAnalysis();
 				EmailServiceHelper email = new EmailServiceHelper();
-				userComments.setSensitive(true);
-
-				System.out.println("userComments     1     >     "+userComments);
+				userComments.setCustSentiments(fb.getSentiments(userComments.getComments()));
+				System.out.println("userComments   "+userComments.toString());
 				email.createJiraTicket(userComments);
 				updateCustomeComments.updateCustomeComments(userComments);
 			}
