@@ -34,7 +34,7 @@ public class DataSource {
 			statement = connect.createStatement();
 			resultSet = statement.executeQuery("select * FROM jira_module");			
 			while (resultSet.next()) {
-				options+="<option select='"+resultSet.getString("mail_id")+"' >"+resultSet.getString("module_name")+"</option>";
+				options+="<option value='"+resultSet.getString("mail_id")+"' >"+resultSet.getString("module_name")+"</option>";
 			}	
 		}catch(Exception e){
 			e.printStackTrace();
