@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
-
+import java.util.LinkedHashMap;
 
 import com.hackathon.dataobject.UserComments; 
 
@@ -53,20 +53,34 @@ public class DataSource {
 		return options;
 	}
 	
-	public ResultSet getSentiments() throws Exception {	
+	public LinkedHashMap<String, SentimentsSocre> getSentiments() throws Exception {	
 		String options="";
 		ResultSet resultSet = null;	
 		Statement statement = null;
+		LinkedHashMap<String, SentimentsSocre> sentiments = new LinkedHashMap<String, SentimentsSocre>();
 		try {
 			connect=readDataBase();
 			System.out.println("connect   "+connect);
 			statement = connect.createStatement();
-			resultSet = statement.executeQuery("select * FROM customer_sentiment");			
+			resultSet = statement.executeQuery("select * FROM customer_sentiment");	
+			
+			
+			SentimentsSocre sentimentsSocre = null;		
+			
+			while (resultSet.next()) {
+				sentimentsSocre = new SentimentsSocre();
+				sentimentsSocre.setScore(Double.parseDouble(resultSet.getString("score")));
+				sentimentsSocre.setWeight(Double.parseDouble(resultSet.getString("weightage")));
+				sentiments.put(resultSet.getString("text"),sentimentsSocre);				
+			}
 			
 		}catch(Exception e){
 			e.printStackTrace();
 			throw e;
 		}finally{
+			if (resultSet != null) {
+				resultSet.close();
+			}
 			if (statement != null) {
 				statement.close();
 			}
@@ -74,7 +88,7 @@ public class DataSource {
 				connect.close();
 			}
 		}
-		return resultSet;
+		return sentiments;
 	}
 
 	public void updateCustomeComments(UserComments userComments) throws Exception {
