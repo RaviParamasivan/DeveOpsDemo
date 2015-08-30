@@ -122,9 +122,9 @@ public class Helper {
 			resultSet = ds.getSentiments();
 			while (resultSet.next()) {
 				sentimentsSocre = new SentimentsSocre();
-				sentimentsSocre.setScore(Double.parseDouble(resultSet.getString("")));
-				sentimentsSocre.setWeight(Double.parseDouble(resultSet.getString("")));
-				sentiments.put(resultSet.getString(""),sentimentsSocre);
+				sentimentsSocre.setScore(Double.parseDouble(resultSet.getString("score")));
+				sentimentsSocre.setWeight(Double.parseDouble(resultSet.getString("weightage")));
+				sentiments.put(resultSet.getString("text"),sentimentsSocre);
 				
 			}	
 		} catch (Exception e) {
