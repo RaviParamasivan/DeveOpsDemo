@@ -10,6 +10,7 @@ public class UserComments {
 	private boolean isSensitive = false;
 	private String userMailId = "";
 	private String devGroupId = "";
+	private String custSentiments = "";
 
 	public String getComments() {
 		return comments;
@@ -65,6 +66,15 @@ public class UserComments {
 
 	public void setDevGroupId(String devGroupId) {
 		this.devGroupId = devGroupId;
+	}
+	
+
+	public String getCustSentiments() {
+		return custSentiments;
+	}
+
+	public void setCustSentiments(String custSentiments) {
+		this.custSentiments = custSentiments;
 	}
 
 	@Override
