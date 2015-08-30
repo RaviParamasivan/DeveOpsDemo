@@ -52,6 +52,30 @@ public class DataSource {
 		}
 		return options;
 	}
+	
+	public ResultSet getSentiments() throws Exception {	
+		String options="";
+		ResultSet resultSet = null;	
+		Statement statement = null;
+		try {
+			connect=readDataBase();
+			System.out.println("connect   "+connect);
+			statement = connect.createStatement();
+			resultSet = statement.executeQuery("select * FROM cutomer_sentiment");			
+			
+		}catch(Exception e){
+			e.printStackTrace();
+			throw e;
+		}finally{
+			if (statement != null) {
+				statement.close();
+			}
+			if (connect != null) {
+				connect.close();
+			}
+		}
+		return resultSet;
+	}
 
 	public void updateCustomeComments(UserComments userComments) throws Exception {
 		Connection connect = null; 
@@ -61,7 +85,7 @@ public class DataSource {
 			connect=readDataBase();
 			System.out.println("connect          >"+connect);
 			System.out.println("userComments          >"+userComments);
-			preparedStatement = connect.prepareStatement("INSERT INTO customer_commands(title,commands,category,module_name,issensitive,user_mail_id,dev_group_id,created_date) values (?, ?, ?, ?, ? , ?, ?, ?)"); 
+			preparedStatement = connect.prepareStatement("INSERT INTO customer_commands(title,commands,category,module_name,issensitive,user_mail_id,dev_group_id,created_date, cut_satisfaction) values (?, ?, ?, ?, ? , ?, ?, ?,?)"); 
 			preparedStatement.setString(1, userComments.getTitle()); 
 			preparedStatement.setString(2, userComments.getComments()); 
 			preparedStatement.setString(3, userComments.getCategaroy()); 
@@ -70,6 +94,7 @@ public class DataSource {
 			preparedStatement.setString(6, userComments.getUserMailId()); 
 			preparedStatement.setString(7, userComments.getDevGroupId()); 
 			preparedStatement.setDate(8, new Date(0)); 
+			preparedStatement.setString(9, userComments.getCustSentiments()); 
 			preparedStatement.executeUpdate();			
 		}catch (Exception e) {
 			e.printStackTrace();
