@@ -85,7 +85,7 @@ public class DataSource {
 			connect=readDataBase();
 			System.out.println("connect          >"+connect);
 			System.out.println("userComments          >"+userComments);
-			preparedStatement = connect.prepareStatement("INSERT INTO customer_commands(title,commands,category,module_name,issensitive,user_mail_id,dev_group_id,created_date, cut_satisfaction) values (?, ?, ?, ?, ? , ?, ?, ?,?)"); 
+			preparedStatement = connect.prepareStatement("INSERT INTO customer_commands(title,commands,category,module_name,issensitive,user_mail_id,dev_group_id,created_date, cust_satisfaction) values (?, ?, ?, ?, ? , ?, ?, ?,?)"); 
 			preparedStatement.setString(1, userComments.getTitle()); 
 			preparedStatement.setString(2, userComments.getComments()); 
 			preparedStatement.setString(3, userComments.getCategaroy()); 
