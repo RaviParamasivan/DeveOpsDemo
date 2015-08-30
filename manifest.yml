@@ -2,5 +2,4 @@ applications:
 - name: DEVOPES
   memory: 1024M
   host: customers-everyday
-  domain: devops.hack.io  
   path: TestDD/target/TestDD.war
