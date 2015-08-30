@@ -53,7 +53,7 @@ function updateFeedback(){
 			"moduleName" : $( "#moduleName option:selected" ).text(),
 			"comments" : $("#comments").val(),
 			"isSensitive" : $('#checkbox').prop("checked"),
-			"devGroupId" : $('#moduleName').val(),
+			"devGroupId" : $( "#moduleName option:selected" ).val(),
 			"userMailId" : "rsnvinesh@gmail.com"			
 		};
 
