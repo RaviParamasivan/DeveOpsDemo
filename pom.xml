@@ -7,7 +7,7 @@
 	<artifactId>DEVOPESDADDY</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
      <packaging>pom</packaging>
-    <modules>
+    <modules> 
         <module>TestDD</module>
     </modules>
     <url>http://maven.apache.org</url>
