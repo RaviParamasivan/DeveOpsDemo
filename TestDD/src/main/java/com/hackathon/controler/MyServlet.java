@@ -27,21 +27,9 @@ public class MyServlet extends HttpServlet {
 			System.out.println("type   " + type);
 			
 			if (type != null && type.equals("module")) {
-
 				DataSource ds = new DataSource();
 				String options = ds.getModuleName();
-				pw.print(options);
-				try{
-					ReadJira jira= new ReadJira();
-					jira.editJiraTicket();
-				}catch(Exception e){
-					e.printStackTrace();
-				}
-				
-				ReferenceClass x= new ReferenceClass();
-				x.ListOfProjects();
-
-				
+				pw.print(options);				
 			} else if (type != null && type.equals("dashboard")) {
 
 			} else {
