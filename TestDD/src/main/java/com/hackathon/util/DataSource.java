@@ -61,7 +61,7 @@ public class DataSource {
 			connect=readDataBase();
 			System.out.println("connect   "+connect);
 			statement = connect.createStatement();
-			resultSet = statement.executeQuery("select * FROM cutomer_sentiment");			
+			resultSet = statement.executeQuery("select * FROM customer_sentiment");			
 			
 		}catch(Exception e){
 			e.printStackTrace();
