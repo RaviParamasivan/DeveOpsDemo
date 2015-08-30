@@ -1,0 +1,6 @@
+applications:
+- name: DEVOPES
+  memory: 1024M
+  host: customers-everyday
+  domain: devops.hack.io  
+  path: DeveOpsDemo/target/TestDD.war
