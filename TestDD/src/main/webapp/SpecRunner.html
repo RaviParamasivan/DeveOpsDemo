@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Home</title>
+        <link rel="Stylesheet" href="home.css" type="text/css" />
+        <link data-require="jasmine@*" data-semver="1.3.1" rel="stylesheet" href="//cdn.jsdelivr.net/jasmine/1.3.1/jasmine.css" / >
+        <script data-require="jasmine@*" data-semver="1.3.1" src="//cdn.jsdelivr.net/jasmine/1.3.1/jasmine.js"></script>
+            <script data-require="jasmine@*" data-semver="1.3.1" src="//cdn.jsdelivr.net/jasmine/1.3.1/jasmine-html.js"></script>    
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <script language="javascript">
+                describe("Testing User Interfase Load", function () {
+                    it("Has Title Test box", function () {
+                        expect(1).toBe($('#title').length);
+                    });
+                     it("Has Categaroy Drop Down available", function () {
+                        expect(1).toBe($('#categaroy').length);
+                    });                    
+                     it("Has Regarding Drop Down available", function () {
+                        expect(0).toBe($('#regarding').length);
+                    });
+                    
+                    it("Has Message Test Area", function () {
+                        expect(1).toBe($('#comments').length);
+                    });
+                    
+                    it("Has Sensitive Info Checkbox", function () {
+                        expect(1).toBe($('#hassensitive').length);
+                    });
+                    
+                    it("Has Submit Button", function () {
+                        expect(1).toBe($('#submit').length);
+                    });
+                });
+                var jasmineEnv = jasmine.getEnv();
+                (function () {
+                    jasmineEnv.updateInterval = 1000;
+                    var htmlReporter = new jasmine.HtmlReporter();
+                    jasmineEnv.addReporter(htmlReporter);
+                    jasmineEnv.specFilter = function (spec) {
+                        return htmlReporter.specFilter(spec);
+                    };
+                    var currentWindowOnload = window.onload;
+                    window.onload = function () {
+                        if (currentWindowOnload) {
+                            currentWindowOnload();
+                        }
+                    };
+                })();
+                function execJasmine() {
+                    jasmineEnv.execute();
+                }
+            </script>
+    </head>
+
+    <body>
+        <div class="floating-form" id="contact_form">
+            <div class="contact-opener">FEEDBACK</div>
+            <div class="floating-form-heading">Please Contact Us</div>
+            <div style="display:none" id="contact_results">Thank you for your feedback.</div>
+            <div id="contact_body">
+                <label><span>Title <span class="required">*</span></span> <input
+                        type="email" name="title" id="title" required="true"
+                        class="input-field"></label> 				
+                <label for="subject"><span>Regarding<span
+                            class="required">*</span></span> <div id="selectVal" name="selectVal"></div></label>	
+                <label for="subject"><span>Category<span
+                            class="required">*</span></span> <select   style='width:400px' name="categaroy" id="categaroy"  class='select-field' >
+                        <option value="Issue">Issue</option>
+                        <option value="Suggestion">Suggestion </option>
+                        <option value="Comments">Comments</option>
+                    </select> </label> 
+
+                <label for="field5"><span>Message <span
+                            class="required">*</span></span> <textarea name="comments"
+                                                               name="comments" id="comments" style="height: 60px" class="textarea-field"
+                                                               required="true"></textarea> </label>
+
+                <label for="field6"><input type="checkbox" id="hassensitive" name="hassensitive" /> <strong>Has Sensitive Info</strong></label>
+
+                <label> <span>&nbsp;</span><input
+                        type="submit" id="submit" value="Submit" onclick="updateFeedback()";></label>
+            </div>
+        </div>
+        <div align="right">
+            <input type="button" id="jasminereport" onclick="execJasmine()" value="Jasmine - Run TDD"  style="background: none repeat scroll 0% 0% #ED1C24;color: white;font-weight: bold;padding: 5px;border-radius: 5px;text-align: center;"/>
+        </div>
+    </body>
+</html>
