@@ -2,11 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-<script src="jquery-2.1.4.min.js" type="text/javascript"></script>
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.sparkline.js"></script>
 <script>
+		 
 $(document).ready(function()
 {
-	
+	  
     var first = $('.item').first(),
         last = $('.item').last(),
         itemWidth = first.width(),
@@ -515,7 +517,9 @@ a.close:hover {
     <h3>Reports</h3>
   </header>
   <div class="modal-body">
-    <p>Report comes here</p>
+    <p>Report comes here
+	 
+	</p>
   </div>
   <footer>
     <a href="#" class="js-modal-close">Close Button</a>
@@ -573,7 +577,7 @@ a.close:hover {
       <section class="panel">
         <header class="panel-heading"> Contestents </header>
         <div class="panel-body table-responsive" id="reportsTable">
-          
+           
         </div>
       </section>
     </div>
@@ -661,6 +665,8 @@ var $layer='<table class="table table-hover" width="100%" cellpadding="0" cellsp
 for(j=0;j<totalNumberOfProjects.length;j++){
  var moduleIssueCount=0;
 var moduleTaskDoneCount=0;
+var moduleTaskInProgressCount=0;
+var moduleTaskToDoCount=0;
 console.log("keyyyyyyy::"+j+"::::::::value::"+totalNumberOfProjects[j]);
 var projectTempName=totalNumberOfProjects[j];
 $.each(totalProjectMap, function(key1,value1) {
@@ -690,6 +696,13 @@ moduleIssueCount=moduleIssueCount+1;
 if(issueStatus=='Done'){
 moduleTaskDoneCount=moduleTaskDoneCount+1;
 }
+if(issueStatus=='In Progress'){
+moduleTaskInProgressCount=moduleTaskInProgressCount+1;
+}
+if(issueStatus=='To Do'){
+moduleTaskToDoCount=moduleTaskToDoCount+1;
+}
+
 }
 });
 }
@@ -706,15 +719,20 @@ if(projectCompletedPercentage>=25 && projectCompletedPercentage<75){
 issueStatus='Average';
 }
 $layer+="<tr><td>"+1+"</td><td>"+projectName+"</td><td>"+projectManager+"</td><td>"+deliveryHead+"</td><td><span class="+issueStatus+">"+issueStatus+"</span></td><td>";
-$layer+=projectCompletedPercentage+"</td><td><a class='js-open-modal' href='#' data-modal-id='popup'> Click me </a></td></tr>";
+$layer+=projectCompletedPercentage+"%</td><td><span class='pie'>"+moduleTaskDoneCount+","+moduleTaskInProgressCount+","+moduleTaskToDoCount+"</span></td></tr>";
+$(function() {
+        
+		  $('.pie').sparkline([ moduleTaskDoneCount,moduleTaskInProgressCount,moduleTaskToDoCount ], { type: 'pie',width: '50px',height:'50px' });
+    });
 }
 $layer+="</tbody></table>";
 $("#reportsTable").append($layer);
+
 //console.log("totalNumberOfProjects:::"+totalNumberOfProjects);
 console.log("totalProjectMap:::"+totalProjectMap.length);
 
 
-
+ 
 </script>
 </body>
 </html>
