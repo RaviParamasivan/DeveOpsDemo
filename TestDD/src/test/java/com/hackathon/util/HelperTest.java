@@ -22,7 +22,7 @@ public class HelperTest {
 	public void getCounts_Test() throws IOException {
 
 		int count = Helper.getCounts("Test , TEst", ",");
-		assertNotNull(count);
+		assert(count>100);
 	}
 
 	@Test
