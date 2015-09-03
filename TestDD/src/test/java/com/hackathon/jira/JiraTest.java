@@ -23,7 +23,6 @@ public class JiraTest {
 		om.setTitle("User Cmd");
 		om.setUserMailId("yy@gami.com");
 		om.setSensitive(false);
-		
 		return om;
 	}
 	
